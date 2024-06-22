@@ -1,0 +1,15 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+header{	
+	background-color: orangered;
+	height: 120px;
+	text-align: centre right;
+}
+
+#activescroll{
+	height: 100px;
+}
