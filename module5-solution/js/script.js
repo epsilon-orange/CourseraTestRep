@@ -126,10 +126,6 @@ function buildAndShowHomeHTML (categories) {
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategory.short_name);
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
-      var menuLink = document.getElementById('menuLink');
-      menuLink.addEventListener('click', function(event) {
-      event.preventDefault(); 
-
       $dc.loadMenuItems(chosenCategory.short_name)
 
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
