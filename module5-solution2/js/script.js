@@ -122,8 +122,15 @@ function buildAndShowHomeHTML (categories) {
 
       //$dc.loadMenuItems(chosenCategory.short_name)
 
-      //insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
+      var menuLink = document.getElementById('menuLink');
+    menuLink.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+
+      // Load menu items for the chosen category
+      $dc.loadMenuItems(chosenCategory.short_name);
+    })
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
